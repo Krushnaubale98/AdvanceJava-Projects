@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+
+	<context-param>
+		<param-name>a</param-name>
+		<param-value>1000</param-value>
+	</context-param>
+
+	<servlet>
+		<servlet-name>DisplayServlet</servlet-name>
+		<servlet-class>test.DisplayServlet</servlet-class>
+		<init-param>
+			<param-name>b</param-name>
+			<param-value>2000</param-value>
+		</init-param>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>DisplayServlet</servlet-name>
+	<url-pattern>/dis</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+	<welcome-file></welcome-file>
+	</welcome-file-list>
+
+
+</web-app>
